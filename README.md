@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# CrossPlat
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### A project in development by [Braden Clokie](https://github.com/bclokie)
 
 ## Available Scripts
 
