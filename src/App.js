@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`app ${darkMode ? 'dark-mode' : ''}`}>
+      <nav className="navbar">
+        <h1>CrossPlat</h1>
+        <div className="search-bar">
+          <input type="text" placeholder="What game are you searching for?" />
+          <button>Search</button>
+        </div>
+        <button className="dark-mode-button" onClick={toggleDarkMode}>
+          {darkMode ? 'Light Mode' : 'Dark Mode'}
+        </button>
+      </nav>
+      <div className="content">
+        {/* Content goes here */}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
