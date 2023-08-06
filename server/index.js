@@ -10,7 +10,7 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 //////// Games with partial crossplay ////////
 //////////////////////////////////////////////
 
-const fullCross = [
+const semiCross = [
   {
     title: "#IDARB",
     platformsWithCrossplay: ["Xbox One", "PC"],
@@ -476,7 +476,7 @@ const fullCross = [
   {
     "Game Title": "Call of Duty: Vanguard",
     "Platforms Available": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S"]
-  }
+  },
   {
     "Game Title": "Chivalry 2",
     "Platforms Available": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S"]
@@ -504,7 +504,7 @@ const fullCross = [
   {
     "Game Title": "Evil Dead: The Game",
     "Platforms Available": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Switch"]
-  }
+  },
   {
     "Game Title": "F1 22",
     "Platforms Available": ["PS4", "PS5", "Xbox One", "Xbox Series X/S", "PC"]
@@ -536,7 +536,7 @@ const fullCross = [
   {
     "Game Title": "Ghostbusters Spirits Unleashed",
     "Platforms Available": ["PS4", "PS5", "Xbox One", "Xbox Series X/S", "PC"]
-  }
+  },
   {
     "Game Title": "GRID Legends",
     "Platforms Available": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S"]
@@ -568,7 +568,7 @@ const fullCross = [
   {
     "Game Title": "MLB The Show 23",
     "Platforms Available": ["PS4", "PS5", "Xbox One", "Xbox Series X/S", "PC", "Switch"]
-  }
+  },
   {
     "Game Title": "Monster Hunter: Rise",
     "Platforms Available": ["PS4", "PS5", "Xbox One", "Xbox Series X/S", "PC", "Switch"]
@@ -600,7 +600,7 @@ const fullCross = [
   {
     "Game Title": "Paladins: Champions of the Realm",
     "Platforms Available": ["Xbox One", "Switch", "PC", "PS4"]
-  }
+  },
   {
     "Game Title": "PGA Tour 2K23",
     "Platforms Available": ["PS4", "PS5", "Xbox One", "Xbox Series X/S", "PC"]
@@ -632,7 +632,7 @@ const fullCross = [
   {
     "Game Title": "Riders Republic",
     "Platforms Available": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S"]
-  }
+  }, 
   {
     "Game Title": "Rocket League",
     "Platforms Available": ["Xbox One", "Switch", "PC", "PS4"]
@@ -664,7 +664,7 @@ const fullCross = [
   {
     "Game Title": "Suicide Squad: Kill the Justice League",
     "Platforms Available": ["PS5", "Xbox Series X/S", "PC"]
-  }
+  },
   {
     "Game Title": "Super Animal Royale",
     "Platforms Available": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Switch"]
@@ -696,7 +696,7 @@ const fullCross = [
   {
     "Game Title": "Warframe",
     "Platforms Available": ["PS4", "PS5", "Xbox One", "Xbox Series X/S", "Switch", "PC"]
-  }
+  },
   {
     "Game Title": "Wild Hearts",
     "Platforms Available": ["PS5", "Xbox Series X/S", "PC"]
