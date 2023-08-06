@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import GameDropdown from './components/gameDropdown';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,7 +22,10 @@ const App = () => {
         </button>
       </nav>
       <div className="content">
-        {/* Content goes here */}
+        <div className="App">
+        <h1>Game Selection</h1>
+        <GameDropdown />
+      </div>      
       </div>
     </div>
   );
