@@ -1,10 +1,20 @@
 const mongoose = require('mongoose');
 
-const url = 'mongodb+srv://braden:clokie@crossplat.rueqrcq.mongodb.net/'; // Replace with your MongoDB server URL and database name
+const url = 'mongodb+srv://braden:clokie@crossplat.rueqrcq.mongodb.net/'; 
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 
-// Define your data models and perform database operations here
+// Define Mongoose models for semiCross and fullCross data
+const SemiCrossModel = mongoose.model('SemiCross', {
+  title: String,
+  platformsWithCrossplay: [String],
+  platformsWithoutCrossplay: [String],
+});
+
+const FullCrossModel = mongoose.model('FullCross', {
+  gameTitle: String,
+  platformsAvailable: [String],
+});
 
 //////////////////////////////////////////////
 //////// Games with partial crossplay ////////
@@ -725,3 +735,30 @@ const fullCross = [
 
 console.log(semiCross);
 console.log(fullCross);
+
+// Function to save data to the database
+async function saveDataToDB() {
+  try {
+    // Save semiCross data
+    for (const game of semiCross) {
+      const semiCrossGame = new SemiCrossModel(game);
+      await semiCrossGame.save();
+    }
+
+    // Save fullCross data
+    for (const game of fullCross) {
+      const fullCrossGame = new FullCrossModel({
+        gameTitle: game['Game Title'],
+        platformsAvailable: game['Platforms Available'],
+      });
+      await fullCrossGame.save();
+    }
+
+    console.log('Data saved to MongoDB');
+  } catch (error) {
+    console.error('Error saving data:', error);
+  }
+}
+
+// Call the function to save data to the database
+saveDataToDB();
