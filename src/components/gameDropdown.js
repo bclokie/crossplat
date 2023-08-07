@@ -6,37 +6,24 @@ const GameDropdown = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetch titles from semicrosses collection
-    axios.get('http://localhost:3001/api/test/semicrosses')
-      .then(response => {
-        const semicrossesTitles = response.data;
-        if (semicrossesTitles.length === 0) {
-          setError('No game titles found.');
-        } else {
-          setError(null);
-          setGameTitles(semicrossesTitles);
-        }
-      })
-      .catch(error => {
-        console.error('Error fetching semicrosses titles:', error);
-        setError('Error fetching semicrosses titles.');
-      });
-
     // Fetch titles from fullcrosses collection
     axios.get('http://localhost:3001/api/test/fullcrosses')
       .then(response => {
         const fullcrossesTitles = response.data;
-        if (fullcrossesTitles.length > 0) {
-          setGameTitles(prevTitles => [...prevTitles, ...fullcrossesTitles]);
+        if (fullcrossesTitles.length === 0) {
+          setError('No game titles found.');
+        } else {
+          setError(null);
+          setGameTitles(fullcrossesTitles);
         }
       })
       .catch(error => {
         console.error('Error fetching fullcrosses titles:', error);
-        // You can handle the error here or just ignore it to keep semicrosses titles
+        setError('Error fetching game titles.');
       });
   }, []);
 
-  // Sort the combined titles alphabetically
+  // Sort the game titles alphabetically
   useEffect(() => {
     setGameTitles(prevTitles => [...prevTitles].sort());
   }, [gameTitles]);

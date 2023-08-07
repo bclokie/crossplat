@@ -1,13 +1,4 @@
-const mongoose = require('mongoose');
-
-const fullCrossModel = mongoose.model('FullCross', {
-  title: String,
-  platformsWithCrossplay: [String],
-  platformsWithoutCrossplay: [String],
-  crossEnabled: Boolean,
-});
-
-let fullCross = [
+[
   {
     "title": "#IDARB",
     "platformsWithCrossplay": [
@@ -1629,6 +1620,4 @@ let fullCross = [
     ],
     "crossEnabled": true
   }
-];
-
-module.exports = { fullCrossModel, fullCross };
+]

@@ -1,37 +1,37 @@
-const { semiCrossModel, semiCross } = require('./models/semiCrossModel');
-const { fullCrossModel, fullCross } = require('./models/fullCrossModel');
-
 // Function to save data to the database
-async function saveDataToDB() {
+async function saveDataToDB(fullCrossModel) {
   try {
-    // Save semiCross data
-    for (const game of semiCross) {
-      const existingGame = await semiCrossModel.findOne({ title: game.title });
-      if (!existingGame) {
-        const semiCrossGame = new semiCrossModel(game);
-        await semiCrossGame.save();
-        console.log(`Saved ${game.title} to MongoDB`);
-      }
-    }
+    // Import the JSON data from the file
+    const jsonData = require('./sorted_combined_array.json');
+    const games = jsonData;
 
-    // Save fullCross data
-    for (const game of fullCross) {
-      const existingGame = await fullCrossModel.findOne({ title: game['Game Title'] });
+    let changesMade = false; // Flag to track if any changes were made
+
+    // Save data
+    for (const game of games) {
+      const existingGame = await fullCrossModel.findOne({ title: game.title });
       if (!existingGame) {
-        const fullCrossGame = new fullCrossModel({
-          title: game['Game Title'],
-          platformsWithCrossplay: game['platformsWithCrossplay'],
+        // Create a newGame instance and populate it with data from the JSON file
+        const newGame = new fullCrossModel({
+          title: game.title,
+          platformsWithCrossplay: game.platformsWithCrossplay,
+          platformsWithoutCrossplay: game.platformsWithoutCrossplay,
+          crossEnabled: game.crossEnabled,
         });
-        await fullCrossGame.save();
-        console.log(`Saved ${game['Game Title']} to MongoDB`)
+        await newGame.save();
+        console.log(`Saved ${game.title} to MongoDB`);
+        changesMade = true; // Set the flag to true
       }
     }
 
-    console.log('Data saved to MongoDB');
+    if (changesMade) {
+      console.log('Data saved to MongoDB');
+    } else {
+      console.log('No changes necessary');
+    }
   } catch (error) {
     console.error('Error saving data:', error);
   }
 }
-
 
 module.exports = saveDataToDB;
