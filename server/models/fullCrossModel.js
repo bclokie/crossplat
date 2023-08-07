@@ -7,6 +7,10 @@ const fullCrossModel = mongoose.model('FullCross', {
   crossEnabled: Boolean,
 });
 
+module.exports = { fullCrossModel };
+
+/* Non-JSON object below
+
 let fullCross = [
   {
     "title": "#IDARB",
@@ -1631,4 +1635,4 @@ let fullCross = [
   }
 ];
 
-module.exports = { fullCrossModel, fullCross };
+*/

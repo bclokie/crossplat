@@ -1,76 +1,49 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { TextField, Button, List, ListItem, ListItemText, CircularProgress } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
-import axios from 'axios';
+import React, { useState } from 'react';
 
-const SearchBar = ({ onSelectGame }) => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [suggestions, setSuggestions] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+const SearchBar = ({ onSelectGame, gameTitles, darkMode }) => {
+  const [searchText, setSearchText] = useState('');
 
-  // Memoize the handleSuggestionClick function
-  const handleSuggestionClick = useCallback(
-    (title) => {
-      setSearchTerm(title);
-      setSuggestions([]); // Clear suggestions
-      onSelectGame(title); // Call the onSelectGame function with selected game
-    },
-    [onSelectGame]
-  );
-
-  useEffect(() => {
-    if (searchTerm.trim() === '') {
-      setSuggestions([]);
-      return;
-    }
-
-    setIsLoading(true);
-
-    axios
-      .get(`http://localhost:3001/api/test/fullcrosses/search/${searchTerm}`)
-      .then((response) => {
-        const titles = response.data;
-        setSuggestions(titles.slice(0, 6)); // Limit to 6 suggestions
-        setIsLoading(false);
-      })
-      .catch((error) => {
-        console.error('Error fetching search suggestions:', error);
-        setIsLoading(false);
-      });
-  }, [searchTerm]);
-
-  const handleInputChange = (event) => {
-    setSearchTerm(event.target.value);
+  const handleSearchChange = (event) => {
+    setSearchText(event.target.value);
   };
 
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+    // Pass the selected game to the parent component
+    onSelectGame(searchText);
+  };
+
+  const matchingGames = gameTitles.filter(
+    (title) =>
+      title.toLowerCase().includes(searchText.toLowerCase()) &&
+      title !== searchText
+  );
+
   return (
-    <div className="search-bar">
-      <TextField
-        fullWidth
-        label="Search for a game"
-        variant="outlined"
-        value={searchTerm}
-        onChange={handleInputChange}
-        InputProps={{
-          endAdornment: (
-            <Button color="primary" size="small">
-              <SearchIcon />
-            </Button>
-          ),
-        }}
-      />
-      {isLoading ? (
-        <CircularProgress style={{ marginTop: 8 }} />
-      ) : (
-        <List>
-          {suggestions.map((title) => (
-            <ListItem key={title} button onClick={() => handleSuggestionClick(title)}>
-              <ListItemText primary={title} />
-            </ListItem>
+    <form onSubmit={handleSearchSubmit}>
+      <div className={`search-bar-container ${darkMode ? 'dark-mode' : ''}`}>
+        <input
+          type="text"
+          placeholder="Search for a game..."
+          value={searchText}
+          onChange={handleSearchChange}
+        />
+        <button type="submit">Search</button>
+      </div>
+      {searchText && matchingGames.length > 0 && (
+        <div className={`matching-games ${darkMode ? 'dark-mode' : ''}`}>
+          {matchingGames.slice(0, 6).map((title) => (
+            <div
+              key={title}
+              className="matching-game"
+              onClick={() => onSelectGame(title)}
+            >
+              {title}
+            </div>
           ))}
-        </List>
+        </div>
       )}
-    </div>
+    </form>
   );
 };
 

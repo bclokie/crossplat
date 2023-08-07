@@ -21,6 +21,7 @@ body {
   width: 100%;
   height: 10vh;
   padding: 20px;
+  position: relative;
 }
 
 .search-bar {
@@ -73,4 +74,33 @@ h1 {
 
 .dark-mode button {
   background-color: #555;
+}
+
+/* Search Bar Styles */
+
+.matching-games {
+  position: relative;
+  top: 20vh; /* Position suggestions directly underneath the search bar */
+  left: 0; /* Set left to 0 to align with the left edge of the search bar */
+  width: calc(100% - 40px); /* Adjust the width to span the full width of the screen minus padding */
+  max-width: 300px; /* Limit the maximum width of the suggestions */
+  background-color: #222; /* Dark mode background color */
+  border: 1px solid #555;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2; /* Ensure the suggestions are above other elements */
+  color: #fff; /* Text color for dark mode */
+}
+
+
+
+/* Styles for light mode */
+.app.dark-mode .matching-games {
+  background-color: #fff; /* Light mode background color */
+  color: #000; /* Text color for light mode */
+}
+
+.matching-game {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
 }
