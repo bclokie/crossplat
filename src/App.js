@@ -21,12 +21,10 @@ const App = () => {
           {darkMode ? 'Light Mode' : 'Dark Mode'}
         </button>
       </nav>
-      <div className="content">
-        <div className="App">
+      <div className="App">
         <h1>Game Selection</h1>
         <GameDropdown />
       </div>      
-      </div>
     </div>
   );
 };
