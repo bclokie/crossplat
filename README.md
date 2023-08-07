@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `node server/index.js`
 
-Connects to the MongoDB database and starts the server. The server will run on [http://localhost:3001](http://localhost:3001). If new data is added to `sorted_combined_array.json`` it will be saved to the database.
+Connects to the MongoDB database and starts the server. The server will run on [http://localhost:3001](http://localhost:3001). If new data is added to `sorted_combined_array.json` it will be saved to the database.
 
 ### `npm start`
 
