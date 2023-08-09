@@ -1,32 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import GameDropdown from './components/gameDropdown';
-import SearchBar from './components/searchBar'; 
-import axios from 'axios';  // Import axios for making API requests
+import SearchBar from './components/searchBar';
+import { fetchGameTitles } from './helpers/api'; 
+import { toggleDarkMode } from './helpers/darkmodeUtil'; 
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
-  const [gameTitles, setGameTitles] = useState([]);  // Initialize an empty array for game titles
+  const [gameTitles, setGameTitles] = useState([]);
 
   useEffect(() => {
-    // Fetch game titles from your API here
-    axios.get('http://localhost:3001/api/test/fullcrosses')
-      .then(response => {
-        const fullcrossesTitles = response.data;
+    // Fetch game titles using the API helper
+    fetchGameTitles()
+      .then((fullcrossesTitles) => {
         setGameTitles(fullcrossesTitles);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error('Error fetching game titles:', error);
       });
-  }, []);  // Empty dependency array means this effect runs only once on component mount
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  }, []);
 
   const handleSelectGame = (selectedGame) => {
-    // Do something with the selected game, such as updating state
     console.log('Selected game:', selectedGame);
+  };
+
+  const handleToggleDarkMode = () => {
+    // Toggle dark mode using the dark mode helper
+    toggleDarkMode(darkMode, setDarkMode);
   };
 
   return (
@@ -34,10 +34,9 @@ const App = () => {
       <nav className="navbar">
         <h1>CrossConnect</h1>
         <div className="search-bar">
-          {/* Pass the gameTitles array to the SearchBar component */}
           <SearchBar onSelectGame={handleSelectGame} gameTitles={gameTitles} darkMode={darkMode} />
         </div>
-        <button className="dark-mode-button" onClick={toggleDarkMode}>
+        <button className="dark-mode-button" onClick={handleToggleDarkMode}>
           {darkMode ? 'Light Mode' : 'Dark Mode'}
         </button>
       </nav>

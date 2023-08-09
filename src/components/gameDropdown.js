@@ -14,7 +14,7 @@ const GameDropdown = () => {
           setError('No game titles found.');
         } else {
           setError(null);
-          setGameTitles(fullcrossesTitles);
+          setGameTitles(fullcrossesTitles.sort()); // Sort titles before setting state
         }
       })
       .catch(error => {
@@ -22,11 +22,6 @@ const GameDropdown = () => {
         setError('Error fetching game titles.');
       });
   }, []);
-
-  // Sort the game titles alphabetically
-  useEffect(() => {
-    setGameTitles(prevTitles => [...prevTitles].sort());
-  }, [gameTitles]);
 
   return (
     <div>
