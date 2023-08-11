@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const GameDropdown = () => {
+const GameDropdown = ({ onSelectGame, selectedGame }) => {
   const [gameTitles, setGameTitles] = useState([]);
   const [error, setError] = useState(null);
 
@@ -30,7 +30,7 @@ const GameDropdown = () => {
       ) : (
         <div>
           <label>Select a Game:</label>
-          <select>
+          <select onChange={(e) => onSelectGame(e.target.value)} value={selectedGame || ''}>
             <option value="">Choose a game</option>
             {gameTitles.map(title => (
               <option key={title} value={title}>

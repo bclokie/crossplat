@@ -1,5 +1,5 @@
 import React from 'react';
-import GameDropdown from '.components/gameDropdown'; 
+import GameDropdown from '../components/gameDropdown'; 
 
 const HomePage = ({ gameTitles }) => {
   return (
