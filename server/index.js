@@ -45,6 +45,25 @@ app.get('/api/test/fullcrosses', async (req, res) => {
   }
 });
 
+// Endpoint to fetch game details based on title
+app.get('/api/test/fullcrosses/:gameTitle', async (req, res) => {
+  try {
+    const gameTitle = req.params.gameTitle;
+
+    // Use gameTitle to find the game details based on the title
+    const gameDetails = await fullCrossModel.findOne({ title: gameTitle });
+
+    if (!gameDetails) {
+      return res.status(404).json({ error: 'Game not found.' });
+    }
+
+    res.json(gameDetails);
+  } catch (error) {
+    console.error('Error fetching game details:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

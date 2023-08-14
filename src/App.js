@@ -44,7 +44,7 @@ const App = () => {
             />
           }
         />
-        <Route path="/games/:gameName" element={<GamePage />} />
+        <Route path="/games/:gameID" element={<GamePage />} />
       </Routes>
     </Router>
   );
