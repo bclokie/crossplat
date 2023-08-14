@@ -7,7 +7,7 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/games/:gameId" element={<GamePage />} /> {/* Use the GamePage component */}
+      <Route path="/games/:gameId" element={<GamePage />} /> 
     </Routes>
   );
 };

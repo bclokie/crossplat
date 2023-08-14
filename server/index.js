@@ -40,7 +40,7 @@ app.get('/api/test/fullcrosses', async (req, res) => {
     const sortedTitles = titles.sort((a, b) => a.localeCompare(b));
     res.json(sortedTitles);
   } catch (error) {
-    console.error('Error fetching fullcross titles:', error);
+    console.error('Error fetching titles:', error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
