@@ -5,11 +5,13 @@ const fullCrossModel = mongoose.model('FullCross', {
   platformsWithCrossplay: [String],
   platformsWithoutCrossplay: [String],
   crossEnabled: Boolean,
+  exceptions: [String],
+  storeLinks: [String],
 });
 
 module.exports = { fullCrossModel };
 
-/* Non-JSON object below
+/* Non-JSON game list below
 
 let fullCross = [
   {
@@ -1636,3 +1638,6 @@ let fullCross = [
 ];
 
 */
+
+// exceptions: [String] - ex. 'Xbox App (PC) and Xbox', 'PS4 and PS5'
+// storeLinks: [String] - ex. 'https://www.epicgames.com/store/en-US/product/rocket-league/home', 'https://www.nintendo.com/games/detail/rocket-league-switch/'

@@ -2,7 +2,7 @@
 async function saveDataToDB(fullCrossModel) {
   try {
     // Import the JSON data from the file
-    const jsonData = require('./sorted_combined_array.json');
+    const jsonData = require('./gameList.json');
     const games = jsonData;
 
     let changesMade = false; // Flag to track if any changes were made

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const GameDropdown = () => {
+const GameDropdown = ({ onSelectGame, selectedGame }) => {
   const [gameTitles, setGameTitles] = useState([]);
   const [error, setError] = useState(null);
 
@@ -14,7 +14,7 @@ const GameDropdown = () => {
           setError('No game titles found.');
         } else {
           setError(null);
-          setGameTitles(fullcrossesTitles);
+          setGameTitles(fullcrossesTitles.sort()); // Sort titles before setting state
         }
       })
       .catch(error => {
@@ -23,11 +23,6 @@ const GameDropdown = () => {
       });
   }, []);
 
-  // Sort the game titles alphabetically
-  useEffect(() => {
-    setGameTitles(prevTitles => [...prevTitles].sort());
-  }, [gameTitles]);
-
   return (
     <div>
       {error ? (
@@ -35,7 +30,7 @@ const GameDropdown = () => {
       ) : (
         <div>
           <label>Select a Game:</label>
-          <select>
+          <select onChange={(e) => onSelectGame(e.target.value)} value={selectedGame || ''}>
             <option value="">Choose a game</option>
             {gameTitles.map(title => (
               <option key={title} value={title}>
