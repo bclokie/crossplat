@@ -3,96 +3,158 @@
     "title": "#IDARB",
     "platformsWithCrossplay": [
       "Xbox One",
-      "PC"
+      "Windows"
     ],
-    "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "platformsWithoutCrossplay": [
+      "Steam"
+    ],
+    "crossEnabled": false,
+    "exceptions": ["Windows/XBO"],
+    "storeLinks": [
+      "https://store.steampowered.com/app/390560/IDARB/", 
+      "FIND LINKS FOR XBOX AND WINDOWS"
+    ]
   },
   {
     "title": "Among Us",
     "platformsWithCrossplay": [
       "Android",
       "iOS",
-      "PC",
-      "Nintendo Switch"
+      "Steam",
+      "Windows",
+      "PS4",
+      "PS5",
+      "Xbox One",
+      "Xbox Series X/S",
+      "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": [
+      "https://store.steampowered.com/app/945360/Among_Us/", 
+      "https://www.nintendo.com/games/detail/among-us-switch/", 
+      "https://play.google.com/store/apps/details?id=com.innersloth.spacemafia&hl=en_US&gl=US",
+      "https://apps.apple.com/us/app/among-us/id1351168404",
+      "https://www.epicgames.com/store/en-US/p/among-us",
+      "https://www.microsoft.com/en-us/p/among-us/9nblggh68pmc"
+      ]
   },
   {
     "title": "Apex Legends",
     "platformsWithCrossplay": [
       "Xbox One",
+      "Xbox Series X/S",
       "PS4",
-      "PC",
+      "PS5",
+      "Origin",
+      "Steam",
+      "Windows",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": [
+      "https://www.origin.com/usa/en-us/store/apex/apex",
+      "https://www.microsoft.com/en-us/p/apex-legends/bv9ml45j2q5v",
+      "https://store.steampowered.com/app/1172470/Apex_Legends/",
+      "https://www.nintendo.com/games/detail/apex-legends-switch/",
+      "https://www.playstation.com/en-us/games/apex-legends/"
+      ]
   },
   {
     "title": "Aragami",
     "platformsWithCrossplay": [
       "Xbox One",
-      "PC"
+      "PS4",
+      "Switch",
+      "Windows",
+      "Steam"
     ],
     "platformsWithoutCrossplay": [
-      "Switch/PS4",
-      "PC"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [
+      "Windows/Steam/PS4", 
+      "Windows/Steam/XBO/SX"
+    ],
+    "storeLinks": []
   },
   {
     "title": "Ark: Survival Evolved",
     "platformsWithCrossplay": [
       "Xbox One",
-      "PS4",
-      "PC",
-      "Switch"
+      "Windows",
+      "Android",
+      "iOS"
     ],
-    "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "platformsWithoutCrossplay": [
+      "Steam",
+      "Switch",
+      "PS4"
+    ],
+    "crossEnabled": false,
+    "exceptions": [
+      "Mobile", 
+      "Windows/XBO"
+    ],
+    "storeLinks": []
   },
   {
     "title": "Astroneer",
     "platformsWithCrossplay": [
       "Xbox One",
       "PS4",
-      "PC"
+      "Windows",
+      "Steam"
     ],
-    "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "platformsWithoutCrossplay": [
+      "Switch"
+    ],
+    "crossEnabled": false,
+    "exceptions": ["Windows/Steam/XBO/PS4"],
+    "storeLinks": []
   },
   {
     "title": "Atom Universe",
     "platformsWithCrossplay": [
-      "PC",
+      "Windows",
+      "Steam",
       "PS4"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Back 4 Blood",
     "platformsWithCrossplay": [
-      "PC",
+      "Windows",
+      "Steam",
       "PS4",
       "PS5",
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Battlefield 2042",
     "platformsWithCrossplay": [
       "PS4",
-      "Xbox One"
-    ],
-    "platformsWithoutCrossplay": [
-      "PC",
+      "Xbox One",
+      "Windows",
+      "Steam",
       "PS5",
       "Xbox Series X/S"
     ],
-    "crossEnabled": false
+    "platformsWithoutCrossplay": [
+    ],
+    "crossEnabled": false,
+    "exceptions": ["PS4/XBO", "Windows/Steam/PS5/XBX"],
+    "storeLinks": []
   },
   {
     "title": "Black Desert Online",
@@ -100,37 +162,54 @@
       "PS4",
       "Xbox One"
     ],
-    "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "platformsWithoutCrossplay": [
+      "Steam",
+      "Windows"
+    ],
+    "crossEnabled": false,
+    "exceptions": [ "PS4/XBO" ],
+    "storeLinks": []
   },
   {
     "title": "Blobcat",
     "platformsWithCrossplay": [
       "Switch",
-      "PC"
+      "Windows",
+      "Steam"
     ],
-    "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "platformsWithoutCrossplay": [
+      "Android"
+    ],
+    "crossEnabled": false,
+    "exceptions": [ "Windows/Steam/SX" ],
+    "storeLinks": []
   },
   {
     "title": "Borderlands 3",
     "platformsWithCrossplay": [
-      "PC",
+      "Windows",
+      "Steam",
+      "Epic",
       "PS4",
       "PS5",
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Boundless",
     "platformsWithCrossplay": [
-      "PC",
+      "Windows",
+      "Steam",
       "PS4"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Brawlhalla",
@@ -138,29 +217,55 @@
       "Switch",
       "Xbox One",
       "PS4",
-      "PC"
+      "Windows",
+      "Steam",
+      "Android",
+      "iOS"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Call of Duty: Black Ops Cold War",
     "platformsWithCrossplay": [
       "PS4",
       "Xbox One",
-      "PC",
-      "Xbox Series X",
-      "Xbox Series X"
+      "Windows",
+      "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
+  },
+  {
+    "title": "Call of Duty: Black Ops III",
+    "platformsWithCrossplay": [
+      "PS3",
+      "PS4",
+      "PS5",
+      "Xbox One",
+      "Xbox Series X",
+      "Xbox 360"
+    ],
+    "platformsWithoutCrossplay": [
+      "Windows",
+      "Steam"
+    ],
+    "crossEnabled": false,
+    "exceptions": [ "PS5/PS4/PS3", "XBX/XBO/XB360"],
+    "storeLinks": []
   },
   {
     "title": "Call of Duty: Modern Warfare",
     "platformsWithCrossplay": [
       "Xbox One",
       "PS4",
-      "PC"
+      "Windows"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Call of Duty: Modern Warfare 2",
@@ -169,31 +274,38 @@
       "PS5",
       "Xbox One",
       "Xbox Series X/S",
-      "PC"
+      "Windows",
+      "Steam"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Call of Duty: Vanguard",
     "platformsWithCrossplay": [
-      "PC",
+      "Windows",
       "PS4",
       "PS5",
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Call of Duty: Warzone",
     "platformsWithCrossplay": [
       "PS4",
       "Xbox One",
-      "PC",
+      "Windows",
       "Xbox Series X",
       "PS5"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Call of Duty: Warzone 2",
@@ -204,107 +316,136 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Chess Ultra",
     "platformsWithCrossplay": [
       "Xbox One",
       "Switch",
-      "PC"
-    ],
-    "platformsWithoutCrossplay": [
-      "PC",
+      "Windows",
+      "Steam",
       "PS4"
     ],
-    "crossEnabled": false
+    "platformsWithoutCrossplay": [
+    ],
+    "crossEnabled": false,
+    "exceptions": [ 
+      "Windows/Steam/PS4",  
+      "Windows/Steam/XBO/SX"
+    ],
+    "storeLinks": []
   },
   {
     "title": "Chivalry 2",
     "platformsWithCrossplay": [
-      "PC",
+      "Windows",
+      "Steam",
       "PS4",
       "PS5",
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
-  },
-  {
-    "title": "Crazy Justice",
-    "platformsWithCrossplay": [
-      "PC",
-      "Switch",
-      "Xbox One"
-    ],
-    "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Dauntless",
     "platformsWithCrossplay": [
       "PS4",
       "Xbox One",
-      "PC",
-      "Switch"
+      "Windows",
+      "Switch",
+      "Android",
+      "iOS"
     ],
-    "crossEnabled": true
-  },
-  {
-    "title": "Dawn of the Breakers",
-    "platformsWithCrossplay": [
-      "PC",
-      "Switch"
-    ],
-    "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "DC Universe Online",
     "platformsWithCrossplay": [
       "PS4",
-      "PC"
+      "Windows",
+      "Steam"
     ],
-    "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "platformsWithoutCrossplay": [
+      "Xbox One",
+      "Switch",
+      "PS3"
+    ],
+    "crossEnabled": false,
+    "exceptions": [ "Windows/Steam/PS4"],
+    "storeLinks": []
   },
   {
     "title": "Dead by Daylight",
     "platformsWithCrossplay": [
       "Switch",
       "Xbox One",
+      "Xbox Series X/S",
       "PS4",
-      "PC"
+      "PS5",
+      "Windows",
+      "Steam",
+      "Android",
+      "iOS"
     ],
-    "crossEnabled": true
+    "crossEnabled": false,
+    "exceptions": [ 
+      "Windows/Steam/PS5/PS4/XBX/XBO/SX", 
+      "Mobile"
+    ],
+    "storeLinks": []
   },
   {
     "title": "Deathloop",
     "platformsWithCrossplay": [
       "PS5",
-      "Xbox Series X/S"
+      "Xbox Series X/S",
+      "Windows",
+      "Steam"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Deep Rock Galactic",
     "platformsWithCrossplay": [
       "Xbox One",
-      "PC"
+      "Xbox Series X/S",
+      "Windows",
+      "PS5",
+      "PS4"
     ],
-    "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "platformsWithoutCrossplay": [
+      "Steam"
+    ],
+    "crossEnabled": false,
+    "exceptions": [ 
+      "Windows/XBX/XBO", 
+      "PS5/PS4" 
+    ],
+    "storeLinks": []
   },
   {
     "title": "Destiny 2",
     "platformsWithCrossplay": [
-      "PC",
+      "Windows",
+      "Steam",
       "PS4",
       "PS5",
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Diablo 4",
@@ -313,51 +454,67 @@
       "PS5",
       "Xbox One",
       "Xbox Series X/S",
-      "PC"
+      "Windows"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Diablo: Immortal",
     "platformsWithCrossplay": [
-      "PC",
-      "Mobile"
+      "Windows",
+      "Android",
+      "iOS"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Dick Wilde 2",
     "platformsWithCrossplay": [
       "PS4",
-      "PC"
+      "Windows",
+      "Steam"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Disc Jam",
     "platformsWithCrossplay": [
       "Switch",
-      "PC"
-    ],
-    "platformsWithoutCrossplay": [
-      "PC",
+      "Windows",
+      "Steam",
       "PS4"
     ],
-    "crossEnabled": false
+    "platformsWithoutCrossplay": [
+    ],
+    "crossEnabled": false,
+    "exceptions": [ 
+      "Windows/Steam/PS4",
+      "Windows/Steam/SX"
+    ],
+    "storeLinks": []
   },
   {
-    "title": "Divine-Knockout",
+    "title": "DKO: Divine Knockout",
     "platformsWithCrossplay": [
       "PS4",
       "PS5",
       "Xbox One",
       "Xbox Series X/S",
-      "PC"
+      "Windows",
+      "Steam"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Dragon Quest Builders 2",
@@ -366,7 +523,9 @@
       "PS4"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Eagle Flight",
@@ -375,7 +534,9 @@
       "PS4"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Eve: Valkyrie",
@@ -384,7 +545,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Evil Dead: The Game",
@@ -396,7 +559,9 @@
       "Xbox Series X/S",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Exoprimal",
@@ -408,7 +573,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Exorder",
@@ -417,7 +584,9 @@
       "Switch"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "F1 22",
@@ -428,7 +597,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Fantasy Strike",
@@ -438,7 +609,9 @@
       "Mac",
       "PC (including Linux)"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Farming Simulator 22",
@@ -449,7 +622,9 @@
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Final Fantasy XIV: A Realm Reborn",
@@ -458,7 +633,9 @@
       "PC",
       "Mac"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Final Fantasy XV",
@@ -467,7 +644,9 @@
       "Xbox One"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "For Honor",
@@ -478,7 +657,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Fortnite",
@@ -491,7 +672,9 @@
       "Xbox Series X",
       "PS5"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Forza Horizon 5",
@@ -501,7 +684,9 @@
       "Xbox Series X/S"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Full Metal Furies",
@@ -510,7 +695,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Games of Glory",
@@ -519,7 +706,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Generation Zero",
@@ -529,7 +718,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Genshin Impact",
@@ -539,7 +730,9 @@
       "Android",
       "iOS"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Ghostbusters Spirits Unleashed",
@@ -550,7 +743,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "GRID Legends",
@@ -561,7 +756,9 @@
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Grounded",
@@ -570,7 +767,9 @@
       "Xbox One"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Guilty Gear: Strive",
@@ -580,7 +779,9 @@
       "PS5"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Gunfire Reborn",
@@ -593,7 +794,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Guns of Icarus Online",
@@ -603,7 +806,9 @@
       "Mac"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Guns Up",
@@ -612,7 +817,9 @@
       "PS4"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Halo Infinite",
@@ -622,7 +829,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Happy Wars",
@@ -631,7 +840,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Hearthstone",
@@ -642,7 +853,9 @@
       "Android"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Hero Siege",
@@ -658,7 +871,9 @@
       "mobile",
       "PS4"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Hex",
@@ -667,7 +882,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Hood: Outlaws and Legends",
@@ -678,7 +895,9 @@
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Hover",
@@ -691,7 +910,9 @@
       "PC",
       "PS4"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Hunter’s Arena: Legends",
@@ -701,7 +922,9 @@
       "PS5"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Kabounce",
@@ -710,7 +933,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Killer Queen Black",
@@ -720,7 +945,9 @@
       "Xbox One"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Madden NFL 22",
@@ -731,7 +958,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Mantis Burn Racing",
@@ -744,7 +973,9 @@
       "Xbox One",
       "PC"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Matchpoint Tennis Championships",
@@ -756,7 +987,9 @@
       "PC",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "MechWarrior 5: Mercenaries",
@@ -766,7 +999,9 @@
       "Xbox Series X/S"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Minecraft",
@@ -777,7 +1012,9 @@
       "PC",
       "mobile"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Minecraft Dungeons",
@@ -787,7 +1024,9 @@
       "PS4",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "MLB The Show 21",
@@ -797,7 +1036,9 @@
       "Xbox One",
       "PS4"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "MLB The Show 23",
@@ -809,7 +1050,9 @@
       "PC",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Monster Hunter: Rise",
@@ -821,7 +1064,9 @@
       "PC",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Mortal Kombat 11",
@@ -831,7 +1076,9 @@
       "Switch"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "MultiVersus",
@@ -842,7 +1089,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Mushroom Wars 2",
@@ -853,7 +1102,9 @@
       "mobile"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "NBA 2K Playgrounds 2",
@@ -864,7 +1115,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Need for Speed: Heat",
@@ -873,7 +1126,9 @@
       "Xbox One",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Nerf Legends",
@@ -884,7 +1139,9 @@
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Neverwinter",
@@ -894,7 +1151,9 @@
       "Xbox One"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Next Up Hero",
@@ -905,7 +1164,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "No Man’s Sky",
@@ -914,7 +1175,9 @@
       "Xbox One",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Onigiri",
@@ -923,7 +1186,9 @@
       "Switch"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Outriders",
@@ -935,7 +1200,9 @@
     "platformsWithoutCrossplay": [
       "PC/console crossplay"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Overcooked: All you can Eat",
@@ -947,7 +1214,9 @@
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Overload",
@@ -959,7 +1228,9 @@
       "PS4",
       "PC"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Overwatch 2",
@@ -971,7 +1242,9 @@
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Paladins: Champions of the Realm",
@@ -981,7 +1254,9 @@
       "PC",
       "PS4"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "PGA Tour 2K23",
@@ -992,7 +1267,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Phantasy Star Online 2",
@@ -1001,7 +1278,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Pinball FX 3",
@@ -1014,7 +1293,9 @@
       "Xbox One",
       "PC"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "PlayerUnknown’s Battlegrounds",
@@ -1023,7 +1304,9 @@
       "Xbox One"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Pokemon Unite",
@@ -1031,7 +1314,9 @@
       "Switch",
       "Mobile"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Power Rangers: Battle for the Grid",
@@ -1041,7 +1326,9 @@
       "PS4",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Powerwash Simulator",
@@ -1054,7 +1341,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Pox Nora",
@@ -1064,7 +1353,9 @@
       "Mac"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Pure Chess",
@@ -1074,7 +1365,9 @@
       "3DS"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Quake",
@@ -1086,7 +1379,9 @@
       "Xbox Series X/S",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Rainbow Six Extraction",
@@ -1097,7 +1392,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Rainbow Six Siege",
@@ -1106,7 +1403,9 @@
       "Xbox Series X/S"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Realm Royale",
@@ -1116,7 +1415,9 @@
       "PC",
       "PS4"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Rec Room",
@@ -1125,7 +1426,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Redfall",
@@ -1134,7 +1437,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Resident Evil Re:Verse",
@@ -1145,7 +1450,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Riders Republic",
@@ -1156,7 +1463,9 @@
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Riptide GP Renegade",
@@ -1168,7 +1477,9 @@
       "Xbox One",
       "PC"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Roblox",
@@ -1179,7 +1490,9 @@
       "mobile"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Rocket League",
@@ -1189,18 +1502,22 @@
       "PC",
       "PS4"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Rogue Company",
     "platformsWithCrossplay": [
       "PS4",
-      "Nintendo Switch",
+      "Switch",
       "PC",
       "Xbox One",
       "Xbox Series X"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Secret Neighbor",
@@ -1210,7 +1527,9 @@
       "Xbox One",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Siegecraft Commander",
@@ -1223,7 +1542,9 @@
       "Xbox One",
       "PC"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "SMITE",
@@ -1233,7 +1554,9 @@
       "PC",
       "PS4"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Sniper Elite V2 Remastered",
@@ -1244,7 +1567,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Spacelords",
@@ -1256,7 +1581,9 @@
     "platformsWithoutCrossplay": [
       "PC"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Splitgate",
@@ -1267,7 +1594,9 @@
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Sports Bar VR",
@@ -1276,7 +1605,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Square Heroes",
@@ -1285,7 +1616,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Star Trek: Bridge Crew",
@@ -1294,7 +1627,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Star Wars: Squadrons",
@@ -1303,7 +1638,9 @@
       "PS4",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Street Fighter 6",
@@ -1314,7 +1651,9 @@
       "Xbox One",
       "Xbox Series X/S"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Street Fighter V",
@@ -1323,7 +1662,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Streets of Rage 4",
@@ -1332,7 +1673,9 @@
       "Xbox One"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Suicide Squad: Kill the Justice League",
@@ -1341,7 +1684,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Super Animal Royale",
@@ -1353,7 +1698,9 @@
       "Xbox Series X/S",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Super Bomberman R Online",
@@ -1363,7 +1710,9 @@
       "Xbox One",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Super Dungeon Bros",
@@ -1376,7 +1725,9 @@
       "Xbox One",
       "PC"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Super Mega Baseball 2",
@@ -1386,7 +1737,9 @@
       "PC",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Super Mega Baseball 3",
@@ -1396,7 +1749,9 @@
       "PC",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Tetris Effect: Connected",
@@ -1406,7 +1761,9 @@
       "Xbox Series X/S"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "The Ascent",
@@ -1417,7 +1774,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Them’s Fightin’ Herds",
@@ -1428,7 +1787,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Tiny Tina’s Wonderlands",
@@ -1439,7 +1800,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Tooth and Tail",
@@ -1449,7 +1812,9 @@
       "Mac"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Trailblazers",
@@ -1463,7 +1828,9 @@
       "Switch",
       "PC"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Treasure Stack",
@@ -1473,7 +1840,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Ultimate Chicken Horse",
@@ -1487,7 +1856,9 @@
       "PC",
       "Mac"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Valheim",
@@ -1497,7 +1868,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "War Thunder",
@@ -1509,7 +1882,9 @@
     "platformsWithoutCrossplay": [
       "Xbox One"
     ],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Warframe",
@@ -1521,7 +1896,9 @@
       "Switch",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Wargroove",
@@ -1532,7 +1909,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Weapons of Mythology: New Age",
@@ -1541,7 +1920,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Werewolves Within",
@@ -1550,7 +1931,9 @@
       "PC"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Wild Hearts",
@@ -1559,7 +1942,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Wo Long: Fallen Dynasty",
@@ -1570,7 +1955,9 @@
       "Xbox Series X/S",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "World of Tanks",
@@ -1579,7 +1966,9 @@
       "Xbox One"
     ],
     "platformsWithoutCrossplay": [],
-    "crossEnabled": false
+    "crossEnabled": false,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "World of Warships: Legends",
@@ -1588,7 +1977,9 @@
       "Xbox One",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "World War Z",
@@ -1597,7 +1988,9 @@
       "Xbox One",
       "PC"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "Worms: Rumble",
@@ -1609,7 +2002,9 @@
       "Xbox Series X/S",
       "Switch"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   },
   {
     "title": "WWE 2k: Battlegrounds",
@@ -1618,6 +2013,8 @@
       "PS4",
       "Xbox One"
     ],
-    "crossEnabled": true
+    "crossEnabled": true,
+    "exceptions": [],
+    "storeLinks": []
   }
 ]
