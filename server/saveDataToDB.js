@@ -17,6 +17,8 @@ async function saveDataToDB(fullCrossModel) {
           platformsWithCrossplay: game.platformsWithCrossplay,
           platformsWithoutCrossplay: game.platformsWithoutCrossplay,
           crossEnabled: game.crossEnabled,
+          exceptions: game.exceptions,
+          storeLinks: game.storeLinks
         });
         await newGame.save();
         console.log(`Saved ${game.title} to MongoDB`);

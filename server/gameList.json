@@ -1,21 +1,5 @@
 [
   {
-    "title": "#IDARB",
-    "platformsWithCrossplay": [
-      "Xbox One",
-      "Windows"
-    ],
-    "platformsWithoutCrossplay": [
-      "Steam"
-    ],
-    "crossEnabled": false,
-    "exceptions": ["Windows/XBO"],
-    "storeLinks": [
-      "https://store.steampowered.com/app/390560/IDARB/", 
-      "FIND LINKS FOR XBOX AND WINDOWS"
-    ]
-  },
-  {
     "title": "Among Us",
     "platformsWithCrossplay": [
       "Android",

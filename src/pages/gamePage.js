@@ -6,19 +6,53 @@ const GamePage = () => {
   const { gameID } = useParams();
   const [gameDetails, setGameDetails] = useState(null);
 
-  // Decode the gameID from URI format to match the title key in the JSON response
   const decodedGameID = decodeURIComponent(gameID);
 
   useEffect(() => {
-    // Fetch game details based on the decoded gameID
     axios.get(`http://localhost:3001/api/test/fullcrosses/${decodedGameID}`)
       .then(response => {
+        console.log('API Response:', response.data);
         setGameDetails(response.data);
       })
       .catch(error => {
         console.error('Error fetching game details:', error);
       });
   }, [decodedGameID]);
+
+  const renderGameDetails = () => {
+    if (!gameDetails) {
+      return <p>Error fetching game details 😢</p>;
+    }
+
+    return (
+      <div>
+        <h1>{gameDetails.title}</h1>
+        {gameDetails.crossEnabled ? (
+          <p>This game has full cross platform support</p>
+        ) : (
+          <p>This game doesn't support full cross platform play</p>
+        )}
+
+        {gameDetails.crossEnabled && (
+          <div>
+            <p>Platforms with Crossplay: {gameDetails.platformsWithCrossplay.join(', ')}</p>
+          </div>
+        )}
+
+        {!gameDetails.crossEnabled && gameDetails.platformsWithoutCrossplay.length > 0 && (
+          <div>
+            <p>Platforms without Crossplay: {gameDetails.platformsWithoutCrossplay.join(', ')}</p>
+          </div>
+        )}
+
+        {gameDetails.exceptions.length > 0 && (
+          <div>
+            <p>Exceptions: {gameDetails.exceptions.join(', ')}</p>
+          </div>
+        )}
+      </div>
+    );
+  };
 
   return (
     <div>
@@ -28,16 +62,7 @@ const GamePage = () => {
       </nav>
       <div className="app">
         <div className="game-details">
-          {gameDetails ? (
-            <div>
-              <h1>{gameDetails.title}</h1>
-              <p>Platforms with Crossplay: {gameDetails.platformsWithCrossplay.join(', ')}</p>
-              <p>Platforms without Crossplay: {gameDetails.platformsWithoutCrossplay.join(', ')}</p>
-              <p>Full Crossplay Ability: {gameDetails.crossEnabled ? 'Yes' : 'No'}</p>
-            </div>
-          ) : (
-            <p>Error fetching game details 😢</p>
-          )}
+          {renderGameDetails()}
         </div>
       </div>
     </div>
