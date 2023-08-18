@@ -47,7 +47,11 @@ const GamePage = () => {
 
         {gameDetails.exceptions.length > 0 && (
           <div>
-            <p>Exceptions: {gameDetails.exceptions.join(', ')}</p>
+            {gameDetails.exceptions.map((exception, index) => (
+              <p key={index}>
+                Cross Platform {gameDetails.exceptions.length > 1 ? `Ecosystem #${index + 1}` : 'Ecosystem'}: {exception.split('/').map(platform => platform.trim()).join(', ')}
+              </p>
+            ))}
           </div>
         )}
       </div>
