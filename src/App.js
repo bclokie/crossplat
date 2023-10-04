@@ -19,7 +19,7 @@ const App = () => {
       .catch((error) => {
         console.error('Error fetching game titles:', error);
       });
-  }, []);
+  }, []);                                                                                                                                                                                                   
 
   const handleSelectGame = (selectedGame) => {
     setSelectedGame(selectedGame);

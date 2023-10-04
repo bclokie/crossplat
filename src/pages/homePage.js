@@ -1,7 +1,7 @@
 import React from 'react';
 import GameDropdown from '../components/gameDropdown';
-import SearchBar from '../components/searchBar';
 import { Link } from 'react-router-dom';
+import Navbar from '../components/navbar'; // Import the common Navbar component
 
 const HomePage = ({ darkMode, handleSelectGame, gameTitles, selectedGame, handleToggleDarkMode }) => {
   const handleGamePageLink = () => {
@@ -16,15 +16,7 @@ const HomePage = ({ darkMode, handleSelectGame, gameTitles, selectedGame, handle
 
   return (
     <div>
-      <nav className="navbar">
-        <h1>CrossConnect</h1>
-        <div className="search-bar">
-          <SearchBar onSelectGame={handleSelectGame} gameTitles={gameTitles} darkMode={darkMode} />
-        </div>
-        <button className="dark-mode-button" onClick={handleToggleDarkMode}>
-          {darkMode ? 'Light Mode' : 'Dark Mode'}
-        </button>
-      </nav>
+      <Navbar darkMode={darkMode} handleToggleDarkMode={handleToggleDarkMode} /> {/* Include the common Navbar */}
       <div className={`app ${darkMode ? 'dark-mode' : ''}`}>
         <div className="App">
           <h1>Game Selection</h1>

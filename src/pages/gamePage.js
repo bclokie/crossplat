@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import Navbar from '../components/navbar';
 
 const GamePage = () => {
   const { gameID } = useParams();
@@ -9,14 +10,19 @@ const GamePage = () => {
   const decodedGameID = decodeURIComponent(gameID);
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/api/test/fullcrosses/${decodedGameID}`)
-      .then(response => {
-        console.log('API Response:', response.data);
-        setGameDetails(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching game details:', error);
-      });
+    const fetchGameDetails = () => {
+      axios.get(`http://localhost:3001/api/test/fullcrosses/${decodedGameID}`)
+        .then(response => {
+          console.log('API Response:', response.data);
+          setGameDetails(response.data);
+        })
+        .catch(error => {
+          console.error('Error fetching game details:', error);
+        });
+    };
+
+    // Call fetchGameDetails inside the useEffect
+    fetchGameDetails();
   }, [decodedGameID]);
 
   const renderGameDetails = () => {
@@ -59,11 +65,8 @@ const GamePage = () => {
   };
 
   return (
-    <div>
-      <nav className="navbar">
-        <h1>CrossConnect</h1>
-        {/* Add dark mode button */}
-      </nav>
+    <div className="game-page-container">
+      <Navbar />
       <div className="app">
         <div className="game-details">
           {renderGameDetails()}
