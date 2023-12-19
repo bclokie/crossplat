@@ -2,6 +2,8 @@
 
 ### A project in development by [Braden Clokie](https://github.com/bclokie)
 
+## This project is on an indefinite hiatus. Too much data entry and the ever growing list of games is too large to be manageable currently. I may come back to this project in the future.
+
 ## Available Scripts
 
 In the project directory, you can run:
