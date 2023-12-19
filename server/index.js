@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3001;
-const url = 'mongodb+srv://braden:clokie@crossplat.rueqrcq.mongodb.net/';
+const url = process.env.REACT_APP_MONGODB_URI || 'mongodb://localhost:27017/fullcrosses';
+require('dotenv').config();
 
 // Import model
 const { fullCrossModel } = require('./models/fullCrossModel');
